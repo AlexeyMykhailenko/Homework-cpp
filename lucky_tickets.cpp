@@ -14,10 +14,10 @@ int* numarray(int v){
 bool tix(int v) {
    int *n = numarray(v);
 
-   int batch1 = n[0] + n[1] + n[2];
-   int batch2 = n[3] + n[4] + n[5];
+   int pt1 = n[0] + n[1] + n[2];
+   int pt2 = n[3] + n[4] + n[5];
 
-   return (batch1 == batch2);
+   return (pt1 == pt2);
 }
 
 int main(){
