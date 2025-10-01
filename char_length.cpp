@@ -1,15 +1,13 @@
 #include <iostream>
-#include <format>
-using namespace std;
 
 int main() {
     const char * str = "String";
-    int length = 0;
+    int l = 0;
     
-    while(str[length] != '\0'){
-        length++;
+    while(str[l] != '\0'){
+        l++;
     }
     
-    cout << format("Length is {}", length) << endl;
+    std::cout << "Length is " << l << std::endl;
     
 }

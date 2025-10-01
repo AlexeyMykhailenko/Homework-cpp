@@ -1,16 +1,15 @@
 #include <iostream>
-using namespace std;
 
 int main(){
     int sum = 0;
 
     int x;
-    cout << "Enter a limit: ";
-    cin >> x;
+    std::cout << "Enter a limit: ";
+    std::cin >> x;
     
     int y;
-    cout << "Enter a limit: ";
-    cin >> y;
+    std::cout << "Enter a limit: ";
+    std::cin >> y;
     
     if(x > y){
         x+=1;
@@ -21,7 +20,7 @@ int main(){
 
             sum+=i;
         }
-        cout << "Sum - " << sum << endl;
+        std::cout << "Sum - " << sum << std::endl;
 
     } else if (y > x) {
         x-=1;
@@ -32,10 +31,10 @@ int main(){
   
             sum+=i;
         }
-        cout << "Sum - " << sum << endl;
+        std::cout << "Sum - " << sum << std::endl;
 
     } else{
-        cout << "An error occured. No integer found in this interval!" << endl;
+        std::cout << "An error occured. No integer found in this interval!" << std::endl;
         }
     
 }

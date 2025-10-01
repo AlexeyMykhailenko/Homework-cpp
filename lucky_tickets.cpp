@@ -1,18 +1,18 @@
 #include <iostream>
 
-int* numarray(int v){
+int* arr(int x){
    int *num = new int[6];
-   int i = 5;
-   while(v){
-      num[i--] = v%10;
-      v /= 10;
+   int y = 5;
+   while(x){
+      num[y--] = x%10;
+      x /= 10;
    }
 
    return num;
 }
 
-bool tix(int v) {
-   int *n = numarray(v);
+bool chck(int x) {
+   int *n = arr(x);
 
    int pt1 = n[0] + n[1] + n[2];
    int pt2 = n[3] + n[4] + n[5];
@@ -21,10 +21,11 @@ bool tix(int v) {
 }
 
 int main(){
-   int  *n = numarray(5);
+   int  *n = arr(5);
+   const int lim = 1000000;
 
-   for (int i = 0; i < 1000000; i++) {
-      if (tix(i)) {
+   for (int i = 0; i < lim; i++) {
+      if (chck(i)) {
          std::cout << i << '\n';
       }
    }
